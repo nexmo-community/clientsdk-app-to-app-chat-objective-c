@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E5CB954DDE2E781D9C66E2AA8CD891BA /* NexmoClient */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A15B8ADEDB63FB2B919A573359150BA2 /* Build configuration list for PBXAggregateTarget "NexmoClient" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = NexmoClient;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		001282F2F2A3B2C2795F945A01B88B41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BC60C506100244EEA333E47360C2FEFE /* Pods-AppToAppChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A515C3A8CEAC7A1547C38D8400596B /* Pods-AppToAppChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F973AC2A1FFD553EFA5BE71936D2A851 /* Pods-AppToAppChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0EF76BB6F4327B96FB343F064B5398 /* Pods-AppToAppChat-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE4F4816FC2BCCD5FDE6689231633D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5CB954DDE2E781D9C66E2AA8CD891BA;
+			remoteInfo = NexmoClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C2C33CE35833AD11A112C62AD5FA1F2 /* Pods-AppToAppChat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppToAppChat-Info.plist"; sourceTree = "<group>"; };
+		0CBFE36C94003348F39080CF8ED03815 /* Pods-AppToAppChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AppToAppChat.modulemap"; sourceTree = "<group>"; };
+		1D0870F91FF562F7F4C434D304BFD8DE /* NexmoClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NexmoClient.release.xcconfig; sourceTree = "<group>"; };
+		1D7ECE29575F54E86965A9C7BB5C2A71 /* Pods-AppToAppChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppToAppChat.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A768128ACB8716105E830BF6D4C81D2 /* Pods-AppToAppChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AppToAppChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		4DB5EBD2E1CC9BF2EE777FE5C4B794A6 /* Pods_AppToAppChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AppToAppChat.framework; path = "Pods-AppToAppChat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE1C3C45ACF5DC2A2F6AC0E84BFE6DA /* Pods-AppToAppChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AppToAppChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8EC3E5E96134D3C21DC428A51C6D595 /* NexmoClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NexmoClient.framework; sourceTree = "<group>"; };
+		AB4165B09FC9DD7474E320B36DD302A7 /* Pods-AppToAppChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AppToAppChat-frameworks.sh"; sourceTree = "<group>"; };
+		E0A515C3A8CEAC7A1547C38D8400596B /* Pods-AppToAppChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AppToAppChat-umbrella.h"; sourceTree = "<group>"; };
+		EA0EF76BB6F4327B96FB343F064B5398 /* Pods-AppToAppChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AppToAppChat-dummy.m"; sourceTree = "<group>"; };
+		EF7EEC89E6CF64F554FEA675CF91383F /* Pods-AppToAppChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AppToAppChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F375D0DFB8816659235BCB17D7F7A557 /* NexmoClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NexmoClient.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C261CB477A7ADC10368C0B6734091D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001282F2F2A3B2C2795F945A01B88B41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E1B6FEB59045BFE464654F61EA39E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F375D0DFB8816659235BCB17D7F7A557 /* NexmoClient.debug.xcconfig */,
+				1D0870F91FF562F7F4C434D304BFD8DE /* NexmoClient.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NexmoClient";
+			sourceTree = "<group>";
+		};
+		2A8704AA0299D748B2E10FE28B3124C1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5A32581E7FDA916EFACC6784CCA7DBB /* Pods-AppToAppChat */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3587BDA3405C951A5D09C5D0C40BE204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC3E5E96134D3C21DC428A51C6D595 /* NexmoClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		670C47623FA849ED34159858251A5C42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1CA4EE56085DBE23EFAE0BEB3459E60 /* NexmoClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				670C47623FA849ED34159858251A5C42 /* Pods */,
+				F849645E3B94548593420D2AEF6798DE /* Products */,
+				2A8704AA0299D748B2E10FE28B3124C1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5A32581E7FDA916EFACC6784CCA7DBB /* Pods-AppToAppChat */ = {
+			isa = PBXGroup;
+			children = (
+				0CBFE36C94003348F39080CF8ED03815 /* Pods-AppToAppChat.modulemap */,
+				8FE1C3C45ACF5DC2A2F6AC0E84BFE6DA /* Pods-AppToAppChat-acknowledgements.markdown */,
+				4A768128ACB8716105E830BF6D4C81D2 /* Pods-AppToAppChat-acknowledgements.plist */,
+				EA0EF76BB6F4327B96FB343F064B5398 /* Pods-AppToAppChat-dummy.m */,
+				AB4165B09FC9DD7474E320B36DD302A7 /* Pods-AppToAppChat-frameworks.sh */,
+				0C2C33CE35833AD11A112C62AD5FA1F2 /* Pods-AppToAppChat-Info.plist */,
+				E0A515C3A8CEAC7A1547C38D8400596B /* Pods-AppToAppChat-umbrella.h */,
+				EF7EEC89E6CF64F554FEA675CF91383F /* Pods-AppToAppChat.debug.xcconfig */,
+				1D7ECE29575F54E86965A9C7BB5C2A71 /* Pods-AppToAppChat.release.xcconfig */,
+			);
+			name = "Pods-AppToAppChat";
+			path = "Target Support Files/Pods-AppToAppChat";
+			sourceTree = "<group>";
+		};
+		E1CA4EE56085DBE23EFAE0BEB3459E60 /* NexmoClient */ = {
+			isa = PBXGroup;
+			children = (
+				3587BDA3405C951A5D09C5D0C40BE204 /* Frameworks */,
+				26E1B6FEB59045BFE464654F61EA39E2 /* Support Files */,
+			);
+			name = NexmoClient;
+			path = NexmoClient;
+			sourceTree = "<group>";
+		};
+		F849645E3B94548593420D2AEF6798DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5EBD2E1CC9BF2EE777FE5C4B794A6 /* Pods_AppToAppChat.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B294016717A502AB99259AA82B5B123E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC60C506100244EEA333E47360C2FEFE /* Pods-AppToAppChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C86E2D8321A251553330696CB84D791 /* Pods-AppToAppChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3065AF6994C8810F592FF4A6080EDC /* Build configuration list for PBXNativeTarget "Pods-AppToAppChat" */;
+			buildPhases = (
+				B294016717A502AB99259AA82B5B123E /* Headers */,
+				3368ED306168A45F3492162458A4C8DA /* Sources */,
+				9C261CB477A7ADC10368C0B6734091D7 /* Frameworks */,
+				2602B324D1C83A9F29D8C518E0DE8B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B75CAE1A8B99DC83C179E12D6CAA2B3 /* PBXTargetDependency */,
+			);
+			name = "Pods-AppToAppChat";
+			productName = "Pods-AppToAppChat";
+			productReference = 4DB5EBD2E1CC9BF2EE777FE5C4B794A6 /* Pods_AppToAppChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F849645E3B94548593420D2AEF6798DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5CB954DDE2E781D9C66E2AA8CD891BA /* NexmoClient */,
+				8C86E2D8321A251553330696CB84D791 /* Pods-AppToAppChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2602B324D1C83A9F29D8C518E0DE8B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3368ED306168A45F3492162458A4C8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F973AC2A1FFD553EFA5BE71936D2A851 /* Pods-AppToAppChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B75CAE1A8B99DC83C179E12D6CAA2B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NexmoClient;
+			target = E5CB954DDE2E781D9C66E2AA8CD891BA /* NexmoClient */;
+			targetProxy = BE4F4816FC2BCCD5FDE6689231633D3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42454DFD889850BDBF79BFAC3D9CD317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF7EEC89E6CF64F554FEA675CF91383F /* Pods-AppToAppChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppToAppChat/Pods-AppToAppChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppToAppChat/Pods-AppToAppChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80948A4690AD8A8F3B738FA79B66B869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7ECE29575F54E86965A9C7BB5C2A71 /* Pods-AppToAppChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AppToAppChat/Pods-AppToAppChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AppToAppChat/Pods-AppToAppChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FFBBF4296E380BFC9E24E94BACD7565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0870F91FF562F7F4C434D304BFD8DE /* NexmoClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6FDBA6D4DAEFCF5C33BD78F5322D2E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F375D0DFB8816659235BCB17D7F7A557 /* NexmoClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15B8ADEDB63FB2B919A573359150BA2 /* Build configuration list for PBXAggregateTarget "NexmoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6FDBA6D4DAEFCF5C33BD78F5322D2E9 /* Debug */,
+				8FFBBF4296E380BFC9E24E94BACD7565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC3065AF6994C8810F592FF4A6080EDC /* Build configuration list for PBXNativeTarget "Pods-AppToAppChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42454DFD889850BDBF79BFAC3D9CD317 /* Debug */,
+				80948A4690AD8A8F3B738FA79B66B869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

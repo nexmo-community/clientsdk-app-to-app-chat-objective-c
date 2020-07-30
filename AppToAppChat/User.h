@@ -12,6 +12,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface User : NSObject
 
+@property NSString *name;
+@property NSString *uuid;
+@property NSString *jwt;
+@property NSString *chatPartnerName;
+@property NSString *conversationId;
+
+-(instancetype)initWithName:(NSString *)name uuid:(NSString *)uuid jwt:(NSString *)jwt chatPartnerName:(NSString *)chatPartnerName;
+
++(instancetype)Alice;
++(instancetype)Bob;
+
 @end
 
 NS_ASSUME_NONNULL_END
