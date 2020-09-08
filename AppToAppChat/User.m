@@ -10,11 +10,10 @@
 
 @implementation User
 
-- (instancetype)initWithName:(NSString *)name uuid:(NSString *)uuid jwt:(NSString *)jwt chatPartnerName:(NSString *)chatPartnerName {
+- (instancetype)initWithName:(NSString *)name jwt:(NSString *)jwt chatPartnerName:(NSString *)chatPartnerName {
     if (self = [super init])
     {
         _name = name;
-        _uuid = uuid;
         _jwt = jwt;
         _chatPartnerName = chatPartnerName;
         _conversationId = @"CONVERSATION_ID";
@@ -23,11 +22,11 @@
 }
 
 + (instancetype)Alice {
-    return [[User alloc] initWithName:@"Alice" uuid:@"ALICE_USERID" jwt:@"ALICE_JWT" chatPartnerName:@"Bob"];
+    return [[User alloc] initWithName:@"Alice" jwt:@"ALICE_JWT" chatPartnerName:@"Bob"];
 }
 
 + (instancetype)Bob {
-    return [[User alloc] initWithName:@"Bob" uuid:@"BOB_USERID" jwt:@"BOB_JWT" chatPartnerName:@"Alice"];
+    return [[User alloc] initWithName:@"Bob" jwt:@"BOB_JWT" chatPartnerName:@"Alice"];
 }
 
 @end

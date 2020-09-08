@@ -85,23 +85,29 @@
 - (void)client:(NXMClient *)client didChangeConnectionStatus:(NXMConnectionStatus)status reason:(NXMConnectionStatusReason)reason {
     switch (status) {
         case NXMConnectionStatusConnected: {
-            self.statusLabel.text = @"Connected";
+            [self setStatusLabelText:@"Connected"];
             UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[ChatViewController alloc] initWithUser:self.user]];
             navigationController.modalPresentationStyle = UIModalPresentationOverFullScreen;
             [self presentViewController:navigationController animated:YES completion:nil];
             break;
         }
         case NXMConnectionStatusConnecting:
-            self.statusLabel.text = @"Connecting";
+            [self setStatusLabelText:@"Connecting"];
             break;
         case NXMConnectionStatusDisconnected:
-            self.statusLabel.text = @"Disconnected";
+            [self setStatusLabelText:@"Disconnected"];
             break;
     }
 }
 
 - (void)client:(NXMClient *)client didReceiveError:(NSError *)error {
-    self.statusLabel.text = error.localizedDescription;
+    [self setStatusLabelText:error.localizedDescription];
+}
+
+- (void)setStatusLabelText:(NSString *)newStatus {
+    dispatch_async(dispatch_get_main_queue(), ^{
+       self.statusLabel.text = newStatus;
+    });
 }
 
 @end
