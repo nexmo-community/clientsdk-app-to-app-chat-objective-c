@@ -5,7 +5,7 @@ This application makes use of the following third party libraries:
 
 The MIT License (MIT)
 
-Copyright (c) 2018 Vonage
+Copyright (c) 2021 Vonage
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

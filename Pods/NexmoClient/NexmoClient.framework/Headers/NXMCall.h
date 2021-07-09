@@ -5,17 +5,16 @@
 //  Copyright © 2018 Vonage. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "NXMCallMember.h"
+@import Foundation;
+
+#import "NXMEnums.h"
 #import "NXMBlocks.h"
 
+@class NXMMember;
 @class NXMCall;
 
-/*!
- * @typedef NXMCallHandler
- * @brief A list of the call handlers.
- * @constant NXMCallHandlerInApp a default call behavior - use it only for IP to IP calls.
- * @constant NXMCallHandlerServer a webhook call, can use it for IP to IP and IP to PSTN.
+/**
+ * A list of the call handlers.
  */
 typedef NS_ENUM(NSInteger, NXMCallHandler) {
     /// A default call behavior - use it only for IP to IP calls.
@@ -24,73 +23,71 @@ typedef NS_ENUM(NSInteger, NXMCallHandler) {
     NXMCallHandlerServer
 };
 
-/*!
- @protocol NXMCallDelegate
- @brief The NXMCallDelegate should be use as the NXMCall delegate.
- @discussion NXMCallDelegate notify on NXMCall object updates.
+/**
+ The NXMCallDelegate should be use as the `NXMCall` delegate.
+ The NXMCallDelegate notifies on NXMCall object updates.
  */
 @protocol NXMCallDelegate <NSObject>
 
-/*!
- * @brief Notify on call member updates
- * @param call A NXMCall object - the call that updated
- * @param callMember A NXMCallMember object - the call member that updated
- * @param status A NXMCallMemberStatus status
+/**
+ * Notify on call member updates
+ * @param call A `NXMCall` object - the call that updated
+ * @param member A `NXMMember` object - the call member that updated
+ * @param status A `NXMCallMemberStatus` status
  */
-- (void)call:(nonnull NXMCall *)call didUpdate:(nonnull NXMCallMember *)callMember withStatus:(NXMCallMemberStatus)status;
+- (void)call:(nonnull NXMCall *)call didUpdate:(nonnull NXMMember *)member withStatus:(NXMCallMemberStatus)status;
 
-/*!
- * @brief Notify on call member updates
- * @param call A NXMCall object - the call that updated
- * @param callMember A NXMCallMember object - the call member that updated
- * @param muted A NXMCallMember object - the call member that updated
+/**
+ * Notify on call member updates
+ * @param call A `NXMCall` object - the call that updated
+ * @param member A `NXMMember` object - the call member that updated
+ * @param muted The muted state
  */
-- (void)call:(nonnull NXMCall *)call didUpdate:(nonnull NXMCallMember *)callMember isMuted:(BOOL)muted;
+- (void)call:(nonnull NXMCall *)call didUpdate:(nonnull NXMMember *)member isMuted:(BOOL)muted;
 
-/*!
- * @brief Notify on call error
- * @param call A NXMCall object - the call that updated
- * @param error - call error
+/**
+ * Notify on call error
+ * @param call A `NXMCall` object - the call that updated
+ * @param error - A call error
  */
 - (void)call:(nonnull NXMCall *)call didReceive:(nonnull NSError *)error;
 
 @optional
 
-/*!
- * @brief Notify on DTMF received
- * @param call A NXMCall object - the call that updated
+/**
+ * Notify on DTMF received
+ * @param call A `NXMCall` object - the call that updated
  * @param dtmf A NSString which represent the dtmf value.
- * @param callMember A NXMCallMember which the dtmf received from.
+ * @param member A `NXMMember` which the dtmf received from.
  */
-- (void)call:(nonnull NXMCall *)call didReceive:(nonnull NSString *)dtmf fromCallMember:(nullable NXMCallMember *)callMember;
+- (void)call:(nonnull NXMCall *)call didReceive:(nonnull NSString *)dtmf fromMember:(nullable NXMMember *)member;
 @end
 
 
-/*!
- @interface NXMCall
- @brief The NXMCall object represent a call.
- @discussion NXMCall can be and incoming call or outgoing call.
+/**
+ The NXMCall class is a `NXMConversation` for phone calls.
+ @note NXMCall can be and incoming call or outgoing call.
  */
 @interface NXMCall : NSObject
 
-/// Indicates all the call members except my call member.
-@property (nonatomic, readonly, nonnull) NSMutableArray<NXMCallMember *> *otherCallMembers;
-
 /// Indicates my call member.
-@property (nonatomic, readonly, nonnull) NXMCallMember *myCallMember;
+@property (nonatomic, readonly, nullable) NXMMember *myMember;
 
-/*!
- * @brief set delegate for the call object.
+/// Indicates all the call members.
+@property (nonatomic, readonly, nonnull) NSArray<NXMMember *> *allMembers;
+
+/**
+ * Set the delegate, `NXMCallDelegate`, for the call object.
  * @param delegate A NXMCallDelegate object.
  */
 - (void)setDelegate:(nonnull id<NXMCallDelegate>)delegate;
 
 #pragma call methods
 
-/*!
- * @brief answer incoming call.
- * @warning can answer the call only when the call member status is ringing.
- * @param completionHandler A NXMErrorCallback block.
+/**
+ * Answer an incoming call.
+ * @warning You can only answer a call when the call member status is ringing.
+ * @param completionHandler A `NXMErrorCallback` block.
  * @code [call answer:delegate completionHandler:^(NSError error){
          if (!error) {
             NSLog(@"answer the call failed");
@@ -103,10 +100,10 @@ typedef NS_ENUM(NSInteger, NXMCallHandler) {
 - (void)answer:(NXMCompletionCallback _Nullable)completionHandler;
 
 
-/*!
- * @brief reject incoming call.
- * @warning can reject the call only when the call member status is ringing.
- * @param completionHandler A NXMErrorCallback block.
+/**
+ * Reject an incoming call.
+ * @warning You can only answer a call when the call member status is ringing.
+ * @param completionHandler A `NXMErrorCallback` block.
  * @code [call rejectWithCompletionHandler:delegate completionHandler:^(NSError error){
          if (!error) {
          NSLog(@"reject call failed");
@@ -118,15 +115,41 @@ typedef NS_ENUM(NSInteger, NXMCallHandler) {
  */
 - (void)reject:(NXMCompletionCallback _Nullable)completionHandler;
 
+/**
+ * Add a member to a call using a username.
+ * @param username The username of the member you want to add.
+ * @param completionHandler A `NXMErrorCallback` block.
+ */
 - (void)addCallMemberWithUsername:(nonnull NSString *)username
                 completionHandler:(NXMCompletionCallback _Nullable)completionHandler;
 
+/**
+ * Add a member to a call using a number.
+ * @param number The number of the member you want to add.
+ * @param completionHandler A `NXMErrorCallback` block.
+ */
 - (void)addCallMemberWithNumber:(nonnull NSString *)number
               completionHandler:(NXMCompletionCallback _Nullable)completionHandler;
 
+/**
+ * Sends DTMF digits to the call.
+ * @param dtmf The DTMF digit(s) to send.
+ */
 - (void)sendDTMF:(nonnull NSString *)dtmf;
 
+/// Hangup an ongoing call.
 - (void)hangup;
 
-@end
+/**
+ * Get the current call status giving a NXMMember.
+ * @param member A `NXMMember` to get the current status from.
+ */
+- (NXMCallMemberStatus)callStatusForMember:(nonnull NXMMember *)member;
 
+/// Mute the current user member.
+- (void)mute;
+
+/// Unmute the current user member.
+- (void)unmute;
+
+@end

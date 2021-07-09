@@ -7,10 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for NexmoClient.
+/// Project version number for NexmoClient.
 FOUNDATION_EXPORT double NexmoClientVersionNumber;
 
-//! Project version string for NexmoClient.
+/// Project version string for NexmoClient.
 FOUNDATION_EXPORT const unsigned char NexmoClientVersionString[];
 
 // to use this framework: #import <NexmoClient/NexmoClient.h>
@@ -20,8 +20,8 @@ FOUNDATION_EXPORT const unsigned char NexmoClientVersionString[];
 #import <NexmoClient/NXMCoreEvents.h>
 #import <NexmoClient/NXMUser.h>
 #import <NexmoClient/NXMMember.h>
+#import <NexmoClient/NXMMemberSummary.h>
 #import <NexmoClient/NXMCall.h>
-#import <NexmoClient/NXMCallMember.h>
 #import <NexmoClient/NXMErrors.h>
 #import <NexmoClient/NXMLogger.h>
 #import <NexmoClient/NXMHelper.h>

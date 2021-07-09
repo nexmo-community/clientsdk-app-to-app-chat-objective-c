@@ -8,24 +8,27 @@
 #import "NXMEvent.h"
 #import "NXMPage.h"
 
+/**
+ * The events on an `NXMConversation` are paginated so the NXMEventsPage class provides a way to traverse a Conversation's events.
+ */
 @interface NXMEventsPage : NXMPage
 
-/*!
- * @brief Events contained in the page. The array size could be smaller than the page size.
+/**
+ * Events contained in the page. The array size could be smaller than the page size.
  * @code NSArray<NXMEvents *> *events = myNXMEventsPage.events;
  */
 @property (nonatomic, nonnull, readonly) NSArray<NXMEvent *> *events;
 
-/*!
- * @brief Retrieves the next page. If the current page is the last, completionHandler will be called with an error.
+/**
+ * Retrieves the next page. If the current page is the last, completionHandler will be called with an error.
  * @code [myNXMEventsPage nextPage:^(NSError * _Nullable error, NXMEventsPage * _Nullable page) {
      // ... use page...
  }];
  */
 - (void)nextPage:(void(^_Nonnull)(NSError * _Nullable error, NXMEventsPage * _Nullable page))completionHandler;
 
-/*!
- * @brief Retrieves the previous page. If the current page is the first, completionHandler will be called with an error.
+/**
+ * Retrieves the previous page. If the current page is the first, completionHandler will be called with an error.
  * @code [myNXMEventsPage previousPage:^(NSError * _Nullable error, NXMEventsPage * _Nullable page) {
  // ... use page...
  }];

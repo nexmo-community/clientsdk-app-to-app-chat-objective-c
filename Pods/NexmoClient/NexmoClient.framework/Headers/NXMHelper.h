@@ -7,16 +7,23 @@
 
 #import "NXMEnums.h"
 
-/*!
- * @brief Helper methods.
-*/
+/**
+ *  Helper methods.
+ */
 @interface NXMHelper : NSObject
 
-/*!
-* @brief Provides a textual description for a given NXMEventType
-* @param eventType event type
-* @code NSString *eventTypeDescription = [NXMHelper descriptionForEventType:eventType];
+/**
+ Provides a textual description for a given NXMEventType.
+ @param eventType The event type you want the description for.
+ @code NSString *eventTypeDescription = [NXMHelper descriptionForEventType:eventType];
 */
 + (nonnull NSString *)descriptionForEventType:(NXMEventType)eventType;
+
+/**
+ Provides a textual description for a given NXMCallMemberStatus.
+ @param callMemberStatus The call member status you want the description for.
+ @code NSString *callMemberStatusDescription = [NXMHelper descriptionForCallMemberStatus:callMemberStatus];
+*/
++ (nonnull NSString *)descriptionForCallMemberStatus:(NXMCallMemberStatus)callMemberStatus;
 
 @end

@@ -7,10 +7,8 @@
 
 #import "NXMEnums.h"
 
-/*!
- @interface NXMLeg
- 
- @brief The NXMLeg object represent the member media state
+/**
+ The NXMLeg object represent the member media state
  */
 @interface NXMLeg : NSObject
 
